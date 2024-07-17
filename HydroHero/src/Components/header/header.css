@@ -1,0 +1,20 @@
+.logo-container {
+  background-color: #ffffff; /* Background color for the logo */
+  padding: 10px; /* Padding around the logo */
+  width: 40px; /* Container width */
+  height: 40px; /* Container height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100%; /* Ensure the logo fills its container */
+  height: 100%; /* Ensure the logo fills its container */
+  object-fit: cover; /* Zoomed-in effect */
+}
+
+.title {
+  flex-grow: 1;
+}
+  
