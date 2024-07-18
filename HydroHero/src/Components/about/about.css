@@ -1,0 +1,31 @@
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-paper {
+    padding: 2rem;
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    .about-paper {
+      padding: 1rem;
+    }
+  
+    .about-section {
+      padding: 1rem;
+    }
+  }
+  
