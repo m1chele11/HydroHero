@@ -1,6 +1,7 @@
 //import React from 'react';
 import { AppBar, Toolbar, Typography } from '@mui/material';
-import './header.css'; // Import your CSS file
+import { Link } from 'react-router-dom';
+import './header.css';
 
 const Header = () => {
   return (
@@ -14,9 +15,9 @@ const Header = () => {
           </Typography>
         </div>
         <div className='header-right'>
-          <a href='#home'>Home</a>
-          <a href='#contact'>Contact</a>
-          <a href='#about'>About</a>
+          <Link to='/' className='nav-link'>Home</Link>
+          <Link to='/contact' className='nav-link'>Contact</Link>
+          <Link to='/about' className='nav-link'>About</Link>
         </div>
       </Toolbar>
     </AppBar>
@@ -24,3 +25,4 @@ const Header = () => {
 }
 
 export default Header;
+

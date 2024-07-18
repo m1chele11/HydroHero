@@ -1,0 +1,23 @@
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+  }
+  
+  .signup-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .signup-paper {
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .submit-button {
+    margin-top: 1rem;
+  }
+  

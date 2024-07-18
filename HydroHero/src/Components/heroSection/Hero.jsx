@@ -1,9 +1,15 @@
-//import React from 'react';
 import { Container, Typography, Box, Button } from '@mui/material';
 import WaterDropTwoToneIcon from '@mui/icons-material/WaterDropTwoTone';
+import { useNavigate } from 'react-router-dom';
 import './hero.css';
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate('/signup');
+  }
+
   return (
     <Box className="hero-section">
       <Container maxWidth="sm" className="hero-content">
@@ -20,6 +26,7 @@ const HeroSection = () => {
             size="large"
             className="get-started-button"
             startIcon={<WaterDropTwoToneIcon />}
+            onClick={handleGetStartedClick}
           >
             Get Started
           </Button>
@@ -30,4 +37,3 @@ const HeroSection = () => {
 }
 
 export default HeroSection;
-
