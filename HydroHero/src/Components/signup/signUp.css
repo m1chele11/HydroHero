@@ -20,4 +20,21 @@
   .submit-button {
     margin-top: 1rem;
   }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .signup-paper {
+    padding: 1rem;
+    margin-right: 4rem;
+    margin-left: 1;
+  }
+
+  .signup-section {
+    padding: 1rem;
+  }
+
+  .submit-button {
+    margin-top: 0.5rem;
+  }
+}
   
