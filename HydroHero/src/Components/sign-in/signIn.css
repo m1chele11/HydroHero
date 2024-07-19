@@ -1,0 +1,62 @@
+.signup-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 5;
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .signup-content {
+    display: flex;
+    justify-content: center;
+    z-index: 1; /* Ensure the content is above the video */
+    width: 100%;
+  }
+  
+  .signup-paper {
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    backdrop-filter: blur(10px); /* Optional: blur background */
+  }
+  
+  .submit-button {
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    .signup-paper {
+      padding: 1rem;
+    }
+  
+    .signup-section {
+      padding: 1rem;
+    }
+  
+    .submit-button {
+      margin-top: 0.5rem;
+    }
+    .video-background {
+      position: absolute;
+      top: 0;
+      left: 5;
+      width: 120%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+  }
+  
+    

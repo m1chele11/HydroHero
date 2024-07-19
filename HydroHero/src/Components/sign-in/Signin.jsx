@@ -1,14 +1,13 @@
-// import React from 'react';
 import { Container, Typography, Box, TextField, Button, Paper, Grid } from '@mui/material';
 import WaterDropTwoToneIcon from '@mui/icons-material/WaterDropTwoTone';
-import './signUp.css';
+import './signIn.css';
+import backgroundVideo from '../../Assets/video.mp4';
 import { Link } from 'react-router-dom';
-import backgroundVideo from '../../Assets/video.mp4'; // Adjust the path as necessary
 
-const SignUp = () => {
+const SignIn = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle sign-up logic here
+    // Handle sign-in logic here
   };
 
   return (
@@ -22,23 +21,10 @@ const SignUp = () => {
           <Box display="flex" flexDirection="column" alignItems="center" p={3}>
             <WaterDropTwoToneIcon color="primary" fontSize="large" />
             <Typography variant="h4" component="h1" gutterBottom>
-              Sign Up to HydroHero
+              Welcome Back!
             </Typography>
             <form onSubmit={handleSubmit}>
               <Grid container spacing={2}>
-                <Grid item xs={12}>
-                  <TextField
-                    variant="outlined"
-                    margin="normal"
-                    required
-                    fullWidth
-                    id="name"
-                    label="Name"
-                    name="name"
-                    autoComplete="name"
-                    autoFocus
-                  />
-                </Grid>
                 <Grid item xs={12}>
                   <TextField
                     variant="outlined"
@@ -72,12 +58,12 @@ const SignUp = () => {
                     color="primary"
                     className="submit-button"
                   >
-                    Sign Up
+                    Sign In
                   </Button>
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" align="center">
-                    Already Hero? <Link to="/signin">Sign In</Link>
+                    Not Hero yet? <Link to="/signup">Sign Up</Link>
                   </Typography>
                 </Grid>
               </Grid>
@@ -89,5 +75,5 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
 
+export default SignIn;

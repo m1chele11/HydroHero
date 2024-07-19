@@ -4,7 +4,7 @@ import Header from './Components/header/Header';
 import Footer from './Components/footer/Footer';
 import About from './Components/about/About';
 import SignUp from './Components/signup/Signup';
-import SignIn from './Components/signup/Signin'
+import SignIn from './Components/sign-in/Signin';
 
 import './App.css';
 
@@ -17,7 +17,7 @@ const App = () => {
           <Route path="/" element={<Hero />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/about" element={<About />} />
-          <Route path="/signin" component={<SignIn/>} />
+          <Route path="/signin" element={<SignIn/>} />
         </Routes>
         <Footer />
       </div>
