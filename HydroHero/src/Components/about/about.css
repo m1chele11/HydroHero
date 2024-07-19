@@ -1,31 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f4f8;
-  }
-  
-  .about-content {
-    display: flex;
-    justify-content: center;
-  }
-  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  overflow: hidden; /* Hide any overflow */
+}
+
+.slogan-container {
+  position: relative;
+  z-index: 1; /* Ensure slogan is above the content */
+  margin-bottom: 2rem; /* Space between slogan and content */
+}
+
+.text-c {
+  display: grid;
+  place-items: center;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 72px;
+
+  line-height: 0;
+}
+
+.drop {
+  position: absolute; /* Absolute position relative to the container */
+  height: 200px;
+  width: 200px;
+  background: #54ABFB;
+  border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+  opacity: 0.8;
+  border: 2px solid #3d93ff;
+  pointer-events: none; /* Avoid interaction with the drops */
+}
+
+.drop::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #318CFE;
+  border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+  box-shadow: -20px 30px 16px #1B6CFB, -40px 60px 32px #1b6cfb, inset -6px 6px 10px #1B6CFB, inset 2px 6px 10px #1a74e5, inset 20px -20px 22px white, inset 40px -40px 44px #a8ceff;
+}
+
+.drop::after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #E6FDFB;
+  border-radius: 44% 56% 46% 54% / 36% 50% 50% 64%;
+  left: 130px;
+  top: 40px;
+  box-shadow: 16px 40px 0 -10px white;
+  opacity: 0.8;
+}
+
+.drop1 {
+  top: 10%;
+  left: 10%;
+}
+
+.drop2 {
+  bottom: 10%;
+  right: 10%;
+  z-index: -1; /* Ensure it's behind other content */
+}
+
+.drop3 {
+  top: 28%;
+  right: 0%;
+  left: 85%;
+  transform: translateY(-50%);
+  z-index: -1; /* Ensure it's behind other content */
+}
+
+.about-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; /* Ensure content is above the background effect */
+  width: 100%;
+  max-width: 100vw; /* Prevent horizontal overflow */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.about-paper {
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 1rem;
+}
+
+@media (max-width: 600px) {
   .about-paper {
-    padding: 2rem;
-    max-width: 800px;
-    width: 100%;
-    background-color: #ffffff;
-    margin: 1rem;
+    padding: 1rem;
   }
-  
-  @media (max-width: 600px) {
-    .about-paper {
-      padding: 1rem;
-    }
-  
-    .about-section {
-      padding: 1rem;
-    }
+
+  .about-section {
+    padding: 1rem;
   }
-  
+}
