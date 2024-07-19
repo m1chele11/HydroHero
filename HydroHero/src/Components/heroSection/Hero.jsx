@@ -12,6 +12,8 @@ const HeroSection = () => {
 
   return (
     <Box className="hero-section">
+      <div className="drop drop-left"></div>
+      <div className="drop drop-right"></div>
       <Container maxWidth="sm" className="hero-content">
         <div>
           <Typography variant="h2" component="h1" gutterBottom>
